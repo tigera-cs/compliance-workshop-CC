@@ -110,7 +110,7 @@ spec:
     includeUnscoredTests: true
     numFailedTests: 5
     resultsFilters:
-      - benchmarkSelection: { kubernetesVersion: "1.20" }
+      - benchmarkSelection: { kubernetesVersion: "1.22" }
         exclude: ["1.1.4", "1.2.5"]
 EOF
 ```
