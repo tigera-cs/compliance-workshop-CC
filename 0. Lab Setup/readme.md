@@ -25,7 +25,6 @@ sudo apt-get install bash-completion
 source /usr/share/bash-completion/bash_completion
 echo 'source <(kubectl completion bash)' >>~/.bashrc
 source ~/.bashrc
-
 ```
 
 First, we will install the Tigera Operator on the cluster:
