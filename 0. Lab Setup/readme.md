@@ -18,6 +18,16 @@ For more details on the install of Project Calico, refer to the [Online Document
 
 ### Install Project Calico as CNI
 
+Before getting started, let's enable bash autocomplete for kubectl so that we can easier interact with kubectl.
+
+```
+sudo apt-get install bash-completion
+source /usr/share/bash-completion/bash_completion
+echo 'source <(kubectl completion bash)' >>~/.bashrc
+source ~/.bashrc
+
+```
+
 First, we will install the Tigera Operator on the cluster:
 
 ```bash
