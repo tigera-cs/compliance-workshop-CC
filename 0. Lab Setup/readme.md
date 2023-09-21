@@ -30,7 +30,7 @@ source ~/.bashrc
 First, we will install the Tigera Operator on the cluster:
 
 ```bash
-kubectl create -f https://projectcalico.docs.tigera.io/archive/v3.22/manifests/tigera-operator.yaml
+kubectl create -f https://raw.githubusercontent.com/projectcalico/calico/v3.26.1/manifests/tigera-operator.yaml
 ```
 
 Next, we apply the custom resource manifest to install Calico as the CNI.
