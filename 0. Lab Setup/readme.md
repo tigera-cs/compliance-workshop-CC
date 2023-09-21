@@ -38,7 +38,6 @@ Next, we apply the custom resource manifest to install Calico as the CNI.
 ```yaml
 kubectl apply -f -<<EOF
 # This section includes base Calico installation configuration.
-# For more information, see: https://docs.projectcalico.org/v3.21/reference/installation/api#operator.tigera.io/v1.Installation
 apiVersion: operator.tigera.io/v1
 kind: Installation
 metadata:
@@ -55,7 +54,6 @@ spec:
       nodeSelector: all()
 ---
 # This section configures the Calico API server.
-# For more information, see: https://docs.projectcalico.org/v3.21/reference/installation/api#operator.tigera.io/v1.APIServer
 apiVersion: operator.tigera.io/v1
 kind: APIServer
 metadata:
