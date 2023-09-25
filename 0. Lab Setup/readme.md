@@ -196,7 +196,7 @@ metadata:
   name: hipstershop-ingress
   namespace: hipstershop
   annotations:
-    nginx.ingress.kubernetes.io/backend-protocol: HTTPS
+    alb.ingress.kubernetes.io/scheme: internal
     kubernetes.io/ingress.class: "nginx"
 spec:
   rules:
