@@ -200,7 +200,7 @@ metadata:
     kubernetes.io/ingress.class: "nginx"
 spec:
   rules:
-    - host: "hipstershop.template.labs.tigera.fr"
+    - host: "hipstershop.template.training.tigera.ca"
       http:
         paths:
           - path: /
@@ -216,13 +216,13 @@ EOF
 
 After deploying you will need to patch the host to match your lab URL using the following command (substitute the keyword LABNAME with the name of your lab):
 ```bash
-kubectl patch ingress hipstershop-ingress -n hipstershop --type='json' -p='[{"op": "replace", "path":"/spec/rules/0/host", "value":"hipstershop.<LABNAME>.labs.tigera.fr"}]'
+kubectl patch ingress hipstershop-ingress -n hipstershop --type='json' -p='[{"op": "replace", "path":"/spec/rules/0/host", "value":"hipstershop.<LABNAME>.training.tigera.ca"}]'
 ```
 
 After completion you should be able to reach your Online Boutique application at:
 
 ```
-https://hipstershop.<LABNAME>.labs.tigera.fr
+https://hipstershop.<LABNAME>.training.tigera.ca
 ```
 
 ![hipstershop](images/hipstershop.png)
